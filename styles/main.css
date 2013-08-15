@@ -25,6 +25,70 @@ html {
   line-height: 1;
 }
 
+body {
+  font: 300 16px/26px Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #002b36;
+  color: #eee;
+  padding: 50px 50px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+header, section, article {
+  width: 540px;
+  padding: 0 250px 30px 50px;
+  margin: 0 auto;
+  display: block;
+  border-left: 1px solid #b58900;
+  position: relative;
+  clear: both;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #fff !important;
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 -250px 20px 0;
+}
+
+h2 a {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+h2 a:hover {
+  text-decoration: none;
+}
+
+h3 {
+  color: #b58900 !important;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0 -250px 30px 0;
+  padding: 0 250px 0 0;
+  color: #fff;
+}
+
+h3 a {
+  color: #b58900 !important;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -48,38 +112,10 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-body {
-  font: 300 16px/26px Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #555;
-  padding: 80px 50px;
-}
-
 a {
-  color: #0099D2;
+  color: #b58900;
   font-weight: 500;
-  text-decoration: none;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-
-a:hover {
-  color: #036;
-}
-
-header, section, article {
-  width: 540px;
-  padding: 0 250px 30px 50px;
-  margin: 0 auto;
-  display: block;
-  border-left: 1px solid #e5e5e5;
-  position: relative;
-  clear: both;
+  text-decoration: underline;
 }
 
 p.meta {
@@ -88,7 +124,7 @@ p.meta {
   width: 44px;
   top: -10px;
   padding: 10px 0;
-  background: #fff;
+  background: #002b36;
   text-align: center;
   line-height: 1.2;
   text-transform: uppercase;
@@ -96,9 +132,11 @@ p.meta {
 
 p.meta img {
   border-radius: 36px;
+  border: 2px solid #b58900;
 }
 
 p.meta.date {
+  color: #b58900;
   top: 0;
   font-size: 13px;
   line-height: 1.1;
@@ -110,55 +148,18 @@ p.meta.date {
 
 strong {
   font-weight: 700;
-  color: #111;
-}
-
-h1 {
-  font-size: 38px;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1.1;
-  color: #111;
-  margin: 0 -250px 20px 0;
-}
-
-h1 a {
-  color: #111;
-  font-weight: 700;
-}
-
-h1 a:hover {
-  color: #333;
-}
-
-h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0 -250px 30px 0;
-  padding: 0 250px 0 0;
-  color: #111;
-}
-
-h2 a {
-  color: #111;
-  font-weight: 700;
-}
-
-h2 a:hover {
-  color: #333;
 }
 
 .archive h2 {
+  font-size: 24px;
   line-height: 1.1;
   padding: 15px 100px 15px 0;
   margin-bottom: 0;
-  border-bottom: 1px dotted #e5e5e5;
+  border-bottom: 1px dotted #b58900;
 }
 
 .archive h2:first-of-type {
-  border-top: 1px dotted #e5e5e5;
+  border-top: 1px dotted #b58900;
 }
 
 p, ul, ol, dl {
@@ -176,25 +177,26 @@ header {
 header h1 {
   font-size: 100%;
   float: left;
-  margin: 8px 20px 0 0;
+  margin: 18px 20px 0 0;
 }
 
-header h1 a {
+header h1 a, header h1 a strong {
+  text-decoration: none;
   font-weight: 300;
-  color: #555;
+  color: white;
 }
 
 header h1 a strong {
   font-weight: 700;
-  color: #555;
 }
 
-header h1.current a {
-  color: #111;
-}
-
-header h1.current a strong {
-  color: #111;
+header h1 a:hover, header h1 a:hover strong {
+  text-decoration: none;
+  color: #586e75;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 header nav ul {
@@ -206,23 +208,23 @@ header nav ul {
 
 header nav ul li {
   float: left;
-  margin: 8px 20px 0 0;
+  margin: 18px 20px 0 0;
   line-height: 1.1;
 }
 
 header nav ul li a {
+  text-decoration: none;
   display: block;
   font-weight: 300;
-  color: #999;
+  color: #fff;
 }
 
 header nav ul li a:hover {
-  color: #333;
-}
-
-header nav ul li.current a {
-  color: #111;
-  font-weight: 700;
+  color: #586e75;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .aside ul {
@@ -233,16 +235,15 @@ header nav ul li.current a {
 
 .aside ul li {
   float: left;
-  margin: 8px 10px 0 0;
+  margin: 18px 10px 0 0;
   line-height: 1.1;
 }
 
 .aside ul li a {
   display: block;
   font-weight: 300;
-  color: #999;
+  color: #586e75;
 }
-
 
 pre {
   font-family: Monaco, courier, monospace;
@@ -267,14 +268,13 @@ ol {
 }
 
 blockquote {
-  border: 1px dotted #e5e5e5;
+  border: 1px dotted #b58900;
   border-width: 1px 0;
   padding: 30px 30px 0;
   margin: 0 0 30px;
   line-height: 1.4;
   font-size: 110%;
   font-style: italic;
-  color: #111;
 }
 
 .aside {
@@ -314,7 +314,7 @@ article img.styled {
     padding: 0 50px 60px;
     margin: 0 auto;
     display: block;
-    border-left: 1px solid #e5e5e5;
+    border-left: 1px solid #b58900;
     position: relative;
   }
 
@@ -416,7 +416,7 @@ article img.styled {
     content: '';
     position: absolute;
     width: 100%;
-    border-bottom: 1px dotted #e5e5e5;
+    border-bottom: 1px dotted #b58900;
     left: 0;
     right: 0;
     top: 27px;
@@ -431,7 +431,7 @@ article img.styled {
   .archive p.meta {
     width: auto;
     font-size: 18px;
-    border-bottom: 1px dotted #e5e5e5;
+    border-bottom: 1px dotted #b58900;
     margin-bottom: 0;
   }
 
