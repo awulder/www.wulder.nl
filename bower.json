@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "~1.2.0rc1",
+    "angular-resource": "~1.2.0rc1",
     "es5-shim": "~2.0.8"
   },
   "devDependencies": {
