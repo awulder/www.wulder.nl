@@ -1,0 +1,13 @@
+markdown: rdiscount
+pygments: true
+permalink: /blog/:year/:month/:day/:title.html
+rdiscount:
+  extensions: [smart]
+
+name: Arjan Wulder
+url: http://www.wulder.nl
+description:
+twitter: arjanwulder
+github: awulder
+linkedin: arjanwulder
+gravatar: http://www.gravatar.com/avatar/fcc627acc4139764658cf3a43c987648

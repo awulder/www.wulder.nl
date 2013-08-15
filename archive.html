@@ -1,0 +1,25 @@
+---
+layout: layout
+title: "Blog"
+---
+
+<!-- <section>
+  <input type="text" ng-model="query" place-holder="filter">
+</section> -->
+
+{% for post in site.posts %}
+  {% unless post.next %}
+    <section class="archive">
+      <p class="meta date"><strong>{{ post.date | date: "%Y" }}</strong></p>
+  {% else %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+    {% if year != nyear %}
+      </section>
+      <section class="archive">
+        <p class="meta date"><strong>{{ post.date | date: "%Y" }}</strong></p>
+    {% endif %}
+  {% endunless %}
+  <p class="aside">{{ post.date | date: "%b %d" }}</p>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{% endfor %}
