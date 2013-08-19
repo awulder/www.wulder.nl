@@ -4,12 +4,12 @@ title: How to improve your TDD skills?
 tags : [Build tools, Development, ]
 ---
 
-Do you think that you do TDD well because you have been doing it for years now? That is what I thought until I did an exercise called “TDD as if you mean it” and it put my feet back on the ground!
+Do you think that you do TDD well because you have done it for years now? That is what I thought until I did an exercise called “TDD as if you mean it” and it put my feet back on the ground!
 
-At two different TDD workshops I have tried to build an application following the rules of  “TDD as if you mean it”. The first time was in Amsterdam at a <a href="http://coderetreat.org/about" target="_blank">Coderetreat</a> and the second time at an XKE session at Xebia. Although I am practicing TDD for a while now, the result of the exercises in both sessions were that I had few tests, even less production code and an application that did not work.
+At two different TDD workshops I have tried to build an application after the rules “TDD as if you mean it”. The first time was in Amsterdam at a <a href="http://coderetreat.org/about" target="_blank">Coderetreat</a> and the second time at an XKE session at Xebia. Although I am practicing TDD for a while now, the result of the exercises in both sessions were that I had few tests, even less production code and an application that did not work.
 
 ### TDD as if you mean it
-TDD itself is quite a simple process. Kent Beck's description of a single TDD cycle is:
+TDD itself is a simple process. Kent Beck's description of a single TDD cycle is:
 
 1. Add a little test
 2. Run all tests and fail
@@ -28,7 +28,7 @@ I think most developers are using this set of rules, or something similar, for a
    1. Doing “extract method” on implementation code created as per (2), or
    2. Moving implementation code as per (2) into an existing implementation method
 4. Only create new methods in the test class
-5. Only create implementation classes to provide a destination for extracting a method created as per (4).
+5. Only create implementation classes to give a destination for extracting a method created as per (4).
 6. Populate implementation classes by doing “move method” from a test class into the implementation classes<
 7. Refactor
 8. Go to (1)
