@@ -9,6 +9,10 @@ layout: layout
 
   <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 
+  {% if page.image %}
+    <p><img src="/assets/{{ page.image }}"/></p>
+  {% endif %}
+
   {{ content }}
 
 </article>

@@ -294,13 +294,32 @@ blockquote {
 }
 
 article img {
-  border: 1px solid #f4f4f4;
+  width: 540px;
+  border: 2px solid #073642;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   padding: 3px;
 }
 
 article img.styled {
   border: none;
   padding: 0;
+}
+
+article em.em1 {
+  font-weight: 300;
+  color: #2aa198; // cyan
+}
+
+article em.em2 {
+  font-weight: 300;
+  color: #268BD2; // blue
+}
+
+article em.em3 {
+  font-weight: 300;
+  color: #93A1A1; // base1
 }
 
 @media print, screen and (max-width: 960px) {

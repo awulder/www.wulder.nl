@@ -1,7 +1,7 @@
 ---
 layout: layout
 ---
-{% for post in site.posts %}
+{% for post in site.posts limit:3 %}
   <article>
     <p class="meta date">
       <strong>{{ post.date | date: "%b %d" }}</strong>
