@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Finally, my first personal blog!
+tags:
+- arjanwulder
 ---
 
 Well, there it is, my first personal blog. I build web applications for all kind of customers but building one of my own is a whole different kind of story. I'm a very hard customer if I may say so. In the last couple of years I've taken several attempts to create my own personal site but none of them made it to the public. I'm a big fan of sharing knowledge and with this blog I will share mine.

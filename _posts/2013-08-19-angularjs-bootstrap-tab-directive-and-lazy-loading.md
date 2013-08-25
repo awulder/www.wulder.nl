@@ -2,11 +2,11 @@
 layout: post
 title: "AngularJS Bootstrap tab directive and lazy loading"
 image: "angularjs.jpg"
+published: true
 tags:
 - AngularJS
 - Bootstrap
 - directive
-published: true
 ---
 
 I was looking for an <a href="http://www.angularjs.org" target="_blank" title="AngularJS">AngularJS</a> tab directive based on Twitter Bootstrap's markup and CSS that supports lazy loading. So the data of a tab should only be loaded when the tab is active. There are some frameworks like <a href="http://angular-ui.github.io/bootstrap/" target="_blank" title="Angular UI">Angular UI</a> and <a href="http://mgcrea.github.io/angular-strap/" target="_blank" title="AngularStrap">AngularStrap</a> that do have tab directives but none of them supports lazy loading. That's why I created a tab directive that supports lazy loading.

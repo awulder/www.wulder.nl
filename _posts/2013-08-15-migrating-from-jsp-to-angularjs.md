@@ -3,6 +3,9 @@ layout: post
 title: "Lessons learned: Migrating from JSP to AngularJS"
 image: "angularjs.jpg"
 published: false
+tags:
+- AngularJS
+- JavaScript
 ---
 
 I'm just halfway of migrating a project I'm working on for about two years now to <a href="http://www.angularjs.org" target="_blank">AngularJS</a> and I want to share a few lessons I learned so far. First of all I'm really impressed by AngularJS. The <a href="https://github.com/angular/angular.js" target="_blank">internal code</a> is easy to read and there are a lot of helpful resources like <a href="http://egghead.io">egghead.io</a>, other blogs and the community.

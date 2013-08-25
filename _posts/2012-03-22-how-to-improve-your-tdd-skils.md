@@ -1,7 +1,11 @@
 ---
 layout: post
 title: How to improve your TDD skills?
-tags : [Build tools, Development, ]
+tags:
+- Testing
+- TDD
+- Test Driven Development
+- Development
 ---
 
 Do you think that you do TDD well because you have done it for years now? That is what I thought until I did an exercise called “TDD as if you mean it” and it put my feet back on the ground!
