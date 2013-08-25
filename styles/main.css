@@ -146,6 +146,29 @@ p.meta.date {
   top: 13px;
 }
 
+.social {
+  position: absolute;
+  right: 0;
+}
+
+.social ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+}
+
+.social ul li {
+  float: left;
+  margin: 18px 10px 0 0;
+  line-height: 1.1;
+}
+
+.social ul li a {
+  display: block;
+  font-weight: 300;
+  color: #586e75;
+}
+
 strong {
   font-weight: 700;
 }
@@ -294,12 +317,15 @@ blockquote {
 }
 
 article img {
-  width: 540px;
   border: 2px solid #073642;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   padding: 3px;
+}
+
+article img.article-image {
+  width: 540px;
 }
 
 article img.styled {
@@ -345,6 +371,17 @@ article em.em3 {
   h2 {
     margin: 0 0 30px;
     padding: 0;
+  }
+
+  .social {
+    position: static;
+    margin: 0 0 30px;
+    width: auto;
+  }
+
+  .social ul {
+    display: block;
+    margin-bottom: 30px;
   }
 
   .aside {
@@ -425,7 +462,7 @@ article em.em3 {
     display: block;
     line-height: 1.1;
     width: 60px;
-    margin: 0 auto 30px;
+    margin: 0 auto 0;
     left: auto;
     top: auto;
     position: static;
@@ -442,6 +479,26 @@ article em.em3 {
     z-index: -1;
   }
 
+  .social {
+    display: block;
+    line-height: 1.1;
+    margin: 0 auto 0;
+    left: auto;
+    top: auto;
+    position: static;
+  }
+
+  .social ul {
+    float: none;
+    display: inline;
+    line-height: 1;
+  }
+
+  .social ul li {
+    float: none;
+    display: inline-block;
+  }
+
   .archive h2:first-of-type {
     border-top: none;
     margin-top: 0px;
@@ -455,7 +512,7 @@ article em.em3 {
   }
 
   .archive p.meta strong {
-    color: #555;
+    color: #b58900;
   }
 
   .archive p.meta:before {
