@@ -5,8 +5,10 @@ rdiscount:
   extensions: [smart]
 
 name: Arjan Wulder
+author: Arjan Wulder
 url: http://www.wulder.nl
-description:
+description: Wulder.nl is a blog which has a high focus on web and software development techniques and guides.
+keywords: Java, JVM, Testing, TDD, Scrum, Continious Integration, Javascript, Web, Productivity, Blog
 twitter: arjanwulder
 github: awulder
 linkedin: arjanwulder
